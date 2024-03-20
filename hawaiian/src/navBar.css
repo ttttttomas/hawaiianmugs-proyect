@@ -1,0 +1,94 @@
+.nav{
+    /* background-color: rgba(0, 0, 0, 0.149); */
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    gap: 250px;
+    padding-top: 15px;
+}
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 10px;
+    /* border-bottom: 1px solid var(--color-text-primary); */
+}
+
+.nav-search input{
+    border: none;
+    height: 30px;
+    width: 120px;
+    background-color: transparent;
+}
+
+.nav-search input::placeholder{
+    color: #00000027;
+    letter-spacing: 1px;
+}
+
+.nav-search i{
+    font-size: 23px;
+    color: var(--color-text-primary);
+    cursor: pointer;
+}
+
+.nav-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-center .nav-title{
+    color: var(--color-text-primary);
+    font-size: 29px;
+}
+
+.nav-center-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.nav-center-list .item-list{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.nav-center-list .item-list.focus{
+    border-bottom: 1px solid var(--color-text-primary);
+    border-top: 1px solid var(--color-text-primary);
+}
+
+.nav-account{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-account .nav-account-login{
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-account .nav-account-login span:first-child,
+.nav-account .nav-account-login span:last-child{
+    cursor: pointer;
+}
+
+.nav-account .nav-account-cart i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE, HOVERS, FOCUS, ETC */
+
+.nav-search input:focus{
+    outline: none;
+}
