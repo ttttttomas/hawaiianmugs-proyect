@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
     --bg-color: rgba(239,239,229,0.6);
     --color-buttons: rgba(52,73,94,1);

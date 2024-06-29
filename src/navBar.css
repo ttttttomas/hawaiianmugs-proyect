@@ -1,12 +1,10 @@
 .nav{
-    /* background-color: rgba(0, 0, 0, 0.149); */
     display: flex;
     position: fixed;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
-    gap: 250px;
-    padding-top: 15px;
+    justify-content: space-between;
+    padding: 15px 50px 0 50px;
 }
 
 .nav-search{
@@ -15,12 +13,13 @@
     justify-content: center;
     gap: 10px;
     padding-right: 10px;
-    /* border-bottom: 1px solid var(--color-text-primary); */
+    border-bottom: 1px solid #0000002e;
 }
 
 .nav-search input{
     border: none;
     height: 30px;
+    outline: none;
     width: 120px;
     background-color: transparent;
 }
@@ -44,13 +43,13 @@
 
 .nav-center .nav-title{
     color: var(--color-text-primary);
-    font-size: 29px;
+    font-size: 28px;
 }
 
 .nav-center-list{
     display: flex;
+    margin-top: 5px;
     justify-content: center;
-    margin-top: 20px;
     letter-spacing: 1px;
     font-size: 12px;
 }
@@ -60,7 +59,7 @@
     cursor: pointer;
 }
 
-.nav-center-list .item-list.focus{
+.nav-center-list .item-list.active{
     border-bottom: 1px solid var(--color-text-primary);
     border-top: 1px solid var(--color-text-primary);
 }
@@ -82,6 +81,22 @@
     cursor: pointer;
 }
 
+.nav-account .nav-account-cart{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    padding: 8px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.nav-account .nav-account-cart small{
+    font-size: 13px;
+    font-weight: 900;
+    color: #000;
+    border-radius: 50%;
+}
+
 .nav-account .nav-account-cart i{
     font-size: 30px;
     cursor: pointer;
@@ -89,6 +104,11 @@
 
 /* RESPONSIVE, HOVERS, FOCUS, ETC */
 
-.nav-search input:focus{
-    outline: none;
+.nav-account .nav-account-login span:first-child:hover{
+    opacity: .75;
 }
+
+.nav-account .nav-account-login span:nth-child(3):hover{
+    opacity: .75;
+}
+
